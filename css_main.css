@@ -1,0 +1,28 @@
+#login {
+    margin-top: 200px;
+}
+
+body, html {
+    height: 100%;
+  }
+
+.bg {
+    /* The image used */
+    background-image: url("bc3.jpg");
+  
+    /* Half height */
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .disabled {
+      color: grey;
+  }
+
+  #login-current {
+    position: absolute;
+    right: 10px;
+  }

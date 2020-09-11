@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#first-page {
+   position: relative;
+   width: 100%;
+   display: flex;
+    min-height: 100vh;
+}
+
+#first-page header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-height: 10vh;
+    background-color: aqua;
+    }
+
+ header ul {
+    float: right ;
+    min-height: 10vh;
+    width: 100%;
+}
+
+header ul li {
+    display: inline-block;
+    /* padding: 20px; */
+    width: 20%;
+    margin: 10px;
+    background-color: brown;
+}
+
+
+header ul li a  {
+    text-decoration: none;
+    font-size: 1.5rem; }
+
+
+
+
+
+
+
+
+/* header {
+    min-height: 8vh;
+    width: 100%;
+    background-color: aqua;
+}
+
+header ul {
+    float: right ;
+    min-height: 8vh;
+}
+
+header ul li {
+    display: inline-block;
+    padding: 20px;
+    
+}
+
+header ul li a  {
+    text-decoration: none;
+    font-size: 30px;
+} */

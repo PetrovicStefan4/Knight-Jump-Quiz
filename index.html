@@ -1,0 +1,239 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knight Quiz</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style_kjq.css">
+</head>
+<body >
+    <ul class="nav  nav-pills text-light bg-dark ">
+        <li class="nav-item c li-dark">
+            <a class="nav-link active nav-dark active bg-danger" href="#">Log-in</a>
+          </li>
+        <li class="nav-item c">
+          <a class="nav-link text-light disabled bg-dark " href="index.html">Single player</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link text-light disabled bg-dark" href="#">Multiplayer</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link text-light disabled bg-dark" href="index_highscore.html">Highscore</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link text-light bg-dark dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Info</a>
+          <div class="dropdown-menu">
+              <p>Informacije</p>
+              <img>
+          </div>
+        </li>
+        <li class="nav-item">
+        <a href="#" class="nav-link text-light bg-dark">Sound</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link d-none text-light bg-dark dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"" id="login-current">Ulogovan</a>
+            <div class="dropdown-menu">
+    
+                <p>Singleplayer Score</p>
+                <p>Multiplayer Score</p>
+                
+                </div>
+            </li>
+      </ul>
+    <div id="zabeleske" class=" bg-danger ">
+            <div>
+                <p id="ispis" class=" text-light disabled bg-dark col-md" >Broj otvorenih polja:1</p>
+                <div id="divPoeni" class=" text-light disabled bg-dark  col-md"><div id="top_Poeni"><p>Broj poena:0</p></div><div id="tacnoNetacno"><p></p></div></div>
+            </div>
+                
+            </div>
+            
+    <div class="sve">
+        
+        <div id="game" >
+            <table class="bg">
+                <!-- prvi red -->
+                <tr>
+                    <td class="oznake"></td>
+                    <td class="oznake">A</td>
+                    <td class="oznake">B</td>
+                    <td class="oznake">C</td>
+                    <td class="oznake">D</td>
+                    <td class="oznake">E</td>
+                    <td class="oznake">F</td>
+                    <td class="oznake">G</td>
+                    <td class="oznake">H</td>
+                    <td class="oznake"></td>
+                </tr>
+
+                <!-- drugi red -->
+                <tr>
+                    <td class="oznake">1</td>
+                    <td class="bela" id="11"></td>
+                    <td class="crno konj prazno" id="12"></td>
+                    <td class="bela"  id="13"></td>
+                    <td class="crno" id="14"></td>
+                    <td class="bela" id="15"></td>
+                    <td class="crno" id="16"></td>
+                    <td class="bela" id="17"></td>
+                    <td class="crno" id="18"></td>
+                    <td class="oznake">1</td>
+
+                </tr>
+
+                <!-- treci red -->
+                <tr>
+                    <td class="oznake">2</td>
+                    <td class="crno" id="21"></td>
+                    <td class="bela" id="22"></td>
+                    <td class="crno" id="23"></td>
+                    <td class="bela" id="24"></td>
+                    <td class="crno" id="25"></td>
+                    <td class="bela" id="26"></td>
+                    <td class="crno" id="27"></td>
+                    <td class="bela" id="28"></td>
+                    <td class="oznake">2</td>
+                </tr>
+
+                <!-- cetvrti red -->
+                <tr>
+                    <td class="oznake">3</td>
+                    <td class="bela" id="31"></td>
+                    <td class="crno" id="32"></td>
+                    <td class="bela" id="33"></td>
+                    <td class="crno" id="34"></td>
+                    <td class="bela" id="35"></td>
+                    <td class="crno" id="36"></td>
+                    <td class="bela" id="37"></td>
+                    <td class="crno" id="38"></td>
+                    <td class="oznake">3</td>
+
+                </tr>
+
+                <!-- peti red -->
+                <tr>
+                    <td class="oznake">4</td>
+                    <td class="crno" id="41"></td>
+                    <td class="bela" id="42"></td>
+                    <td class="crno" id="43"></td>
+                    <td class="bela" id="44"></td>
+                    <td class="crno" id="45"></td>
+                    <td class="bela" id="46"></td>
+                    <td class="crno" id="47"></td>
+                    <td class="bela" id="48"></td>
+                    <td class="oznake">4</td>
+
+                </tr>
+
+                <!-- sesti red-->
+                <tr>
+                    <td class="oznake">5</td>
+                    <td class="bela" id="51"></td>
+                    <td class="crno" id="52"></td>
+                    <td class="bela" id="53"></td>
+                    <td class="crno" id="54"></td>
+                    <td class="bela" id="55"></td>
+                    <td class="crno" id="56"></td>
+                    <td class="bela" id="57"></td>
+                    <td class="crno" id="58"></td>
+                    <td class="oznake">5</td>
+
+                </tr>
+
+                <!-- sedmi red  -->
+                <tr>
+                    <td class="oznake">6</td>
+                    <td class="crno" id="61"></td>
+                    <td class="bela" id="62"></td>
+                    <td class="crno" id="63"></td>
+                    <td class="bela" id="64"></td>
+                    <td class="crno" id="65"></td>
+                    <td class="bela" id="66"></td>
+                    <td class="crno" id="67"></td>
+                    <td class="bela" id="68"></td>
+                    <td class="oznake">6</td>
+
+                </tr>
+                <!-- osmi red -->
+                <tr>
+                    <td class="oznake">7</td>
+                    <td class="bela" id="71"></td>
+                    <td class="crno" id="72"></td>
+                    <td class="bela" id="73"></td>
+                    <td class="crno" id="74"></td>
+                    <td class="bela" id="75"></td>
+                    <td class="crno" id="76"></td>
+                    <td class="bela" id="77"></td>
+                    <td class="crno" id="78"></td>
+                    <td class="oznake">7</td>
+
+                </tr>
+                <!-- deveti red -->
+                <tr>
+                    <td class="oznake">8</td>
+                    <td class="crno" id="81"></td>
+                    <td class="bela" id="82"></td>
+                    <td class="crno" id="83"></td>
+                    <td class="bela" id="84"></td>
+                    <td class="crno" id="85"></td>
+                    <td class="bela" id="86"></td>
+                    <td class="crno" id="87"></td>
+                    <td class="bela" id="88"></td>
+                    <td class="oznake" >8</td>
+                </tr>
+
+                <!-- deseti red -->
+                <tr>
+                    <td class="oznake"></td>
+                    <td class="oznake">A</td>
+                    <td class="oznake">B</td>
+                    <td class="oznake">C</td>
+                    <td class="oznake">D</td>
+                    <td class="oznake">E</td>
+                    <td class="oznake">F</td>
+                    <td class="oznake">G</td>
+                    <td class="oznake">H</td>
+                    <td class="oznake"></td>
+                </tr>
+            </table>
+        </div>   
+    </div>
+    <div id="divPitanje"></div> 
+<div class="alert alert-warning alert-dismissible d-none" id="div-bottom-alert">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close"  id="bottom-alert" >&times;</a>
+</div>
+
+
+
+<script type='module' src="script_kjq.js"></script> 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-firestore.js"></script>
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+    https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+// Your web app's Firebase configuration
+var firebaseConfig = {
+    apiKey: "AIzaSyBooDPiJF1EnkAfnW6xPRUgstpD9gPoxpI",
+    authDomain: "it-bootcamp.firebaseapp.com",
+    databaseURL: "https://it-bootcamp.firebaseio.com",
+    projectId: "it-bootcamp",
+    storageBucket: "it-bootcamp.appspot.com",
+    messagingSenderId: "10582186465",
+    appId: "1:10582186465:web:6e074d6a1e5e193bcf9aa0"
+};
+
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+let db = firebase.firestore(); 
+    </script> 
+
+</body>
+</html>
+
